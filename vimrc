@@ -1,51 +1,23 @@
-let mapleader = "\<Space>"
-set nocompatible
-set nu
-syntax on
-set showmatch
-set matchtime=3
-"filetype indent on
-set expandtab
+set number
+set softtabstop=2
 set tabstop=2
 set shiftwidth=2
-set ruler
-set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
-" To constantly show filename at bottom
-set modeline
-set ls=2
 
-" Set incremental search
-set incsearch
+set expandtab
+set autoindent
+set nocindent
+set smartindent
+set ignorecase
+set smartcase
 
-" Configuration file for vim
-set modelines=0		" CVE-2007-2438
+let mapleader="\\"
+nmap <Leader>w :w<CR>
+nmap <Leader>b <C-^>
+nmap <Leader>o o<Esc>
+nmap <Leader>O O<Esc>
+tnoremap <Esc> <C-\><C-n>
 
-" Normally we use vim-extensions. If you want true vi-compatibility
-" remove change the following statements
-
-set backspace=2		" more powerful backspacing
-
-" Don't write backup file if vim is being called by "crontab -e"
-au BufWrite /private/tmp/crontab.* set nowritebackup
-" Don't write backup file if vim is being called by "chpass"
-au BufWrite /private/etc/pw.* set nowritebackup
-
-" Open tab and file browser if name is not known
-nmap T :tabedit<Enter>:Explore<Enter>
-
-" Custom Keymappings with Leader
-nmap <Leader>h :tabp<Enter>
-nmap <Leader>l :tabn<Enter>
-
-"For rust recognition"
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'rhysd/vim-crystal'
-call vundle#end()
-filetype plugin indent on
+call plug#begin('~/.vim/plugged')
+  Plug 'tpope/vim-sensible'
+  Plug 'https://github.com/itchyny/vim-haskell-indent'
+call plug#end()

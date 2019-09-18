@@ -1,2 +1,2 @@
-# dotfiles
-My dotfiles so I can use them wherever.
+# Vim Config
+This is for my Vim config file now.
