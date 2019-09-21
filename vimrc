@@ -17,6 +17,12 @@ nmap <Leader>o o<Esc>
 nmap <Leader>O O<Esc>
 tnoremap <Esc> <C-\><C-n>
 
+" Reload Vim config automatically
+autocmd BufWritePost .vimrc :source $MYVIMRC
+
+" Reload openbox when conf edited
+autocmd BufWritePost */openbox/*rc.xml !openbox --restart
+
 call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-sensible'
   Plug 'https://github.com/itchyny/vim-haskell-indent'
