@@ -709,10 +709,6 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application name="gvim">
-      <desktop>2</desktop>
-      <maximized>yes</maximized>
-    </application>
     <application class="Thunderbird">
       <desktop>1</desktop>
       <maximized>yes</maximized>
