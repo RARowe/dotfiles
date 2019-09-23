@@ -322,15 +322,6 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
-      </action>
-    </keybind>
     <keybind key="W-V">
       <action name="Execute">
         <startupnotify>
@@ -338,6 +329,15 @@
           <name>gVim</name>
         </startupnotify>
         <command>gvim</command>
+      </action>
+    </keybind>
+    <keybind key="W-T">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>x-terminal-emulator</command>
       </action>
     </keybind>
     <!-- Launch scrot when Print is pressed -->
@@ -713,7 +713,7 @@
       <desktop>2</desktop>
       <maximized>yes</maximized>
     </application>
-    <application name="thunderbird">
+    <application class="Thunderbird">
       <desktop>1</desktop>
       <maximized>yes</maximized>
     </application>
