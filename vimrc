@@ -13,6 +13,8 @@ set smartcase
 let mapleader="\\"
 nmap <Leader>w :w<CR>
 nmap <Leader>b <C-^>
+nmap <Leader>n :bnext<CR>
+nmap <Leader>p :bprevious<CR>
 nmap <Leader>o o<Esc>
 nmap <Leader>O O<Esc>
 nmap <Leader>p "*p
