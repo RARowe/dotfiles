@@ -21,7 +21,7 @@ nmap <Leader>p "*p
 tnoremap <Esc> <C-\><C-n>
 
 " Reload Vim config automatically
-autocmd! BufWritePost vimrc :source $MYVIMRC
+autocmd! BufWritePost *vimrc :source $MYVIMRC
 
 " Reload openbox when conf edited
 autocmd! BufWritePost */openbox/*rc.xml !openbox --restart
