@@ -2,6 +2,7 @@
 
 # Link vimrc
 ln -s $(pwd)/vimrc ~/.vimrc
+ln -s $(pwd)/tmux.conf ~/.tmux.conf
 
 # Install Plugged
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
